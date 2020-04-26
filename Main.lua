@@ -5,11 +5,11 @@ require 'Bird'
 WINDOW_WIDTH = 1280
 WINDOW_HEIGHT = 720
 
-
+-- learn how to use git
 VIRTUAL_WIDTH = 512
 VIRTUAL_HEIGHT = 288
 
-
+-- adding some more comment
 local background = love.graphics.newImage('background.png')
 local backgroundScroll = 0
 
