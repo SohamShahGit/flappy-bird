@@ -2,6 +2,8 @@ Class = require 'class'
 
 Bird = Class{}
 local Gravity = 30
+
+
 function Bird:init()
   self.image = love.graphics.newImage('bird.png')
   self.width = self.image:getWidth()
@@ -10,6 +12,8 @@ function Bird:init()
   self.y = VIRTUAL_HEIGHT / 2 - (self.height / 2)
   self.dy = 0
 end
+
+
 function Bird:update(dt)
   self.dy = self.dy + Gravity * dt
 
@@ -18,6 +22,8 @@ function Bird:update(dt)
   end
     self.y = self.y + self.dy
 end
+
+
 function Bird:render()
   love.graphics.draw(self.image, self.x, self.y)
 end
