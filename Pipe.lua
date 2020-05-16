@@ -14,7 +14,7 @@ function Pipe:init( orientation, y)
 end
 
 function Pipe:update(dt)
-self.x = self.x + PIPE_SCROOL * dt
+--self.x = self.x + PIPE_SCROOL * dt
 end
 
 function Pipe:render()
